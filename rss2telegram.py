@@ -16,9 +16,9 @@ def get_variable(variable):
         return var_file.read()
     return os.environ.get(f'{variable}')
 
-URL = get_variable('URL')
-DESTINATION = get_variable('DESTINATION')
-BOT_TOKEN = os.environ.get('BOT_TOKEN')
+URL = get_variable('https://colunadofla.com/feed, https://netfla.com.br/noticias/rss, https://mundorubronegro.com/feed/')
+DESTINATION = get_variable('@flamengoagora')
+BOT_TOKEN = os.environ.get('6218224150:AAEltmwQtK62sUnUsLk20MBQALT9y-THCtY')
 EMOJIS = os.environ.get('EMOJIS', '🗞,📰,🗒,🗓,📋,🔗,📝,🗃')
 PARAMETERS = os.environ.get('PARAMETERS', False)
 HIDE_BUTTON = os.environ.get('HIDE_BUTTON', False)
